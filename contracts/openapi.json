@@ -1,0 +1,43 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "WareTwin API",
+    "version": "0.1.0",
+    "description": "Starter contract; export the live FastAPI schema with scripts/export_openapi.py."
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health check",
+        "responses": {
+          "200": {
+            "description": "Service is healthy"
+          }
+        }
+      }
+    },
+    "/api/v1/twin/snapshot": {
+      "get": {
+        "summary": "Get digital twin snapshot",
+        "responses": {
+          "200": {
+            "description": "Current snapshot"
+          }
+        }
+      }
+    },
+    "/api/v1/routing/bfs": {
+      "post": {
+        "summary": "Compute a baseline grid route",
+        "responses": {
+          "200": {
+            "description": "Route result"
+          },
+          "422": {
+            "description": "No route or invalid input"
+          }
+        }
+      }
+    }
+  }
+}

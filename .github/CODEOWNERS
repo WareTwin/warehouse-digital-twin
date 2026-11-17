@@ -1,0 +1,5 @@
+/backend/ @WareTwin/backend
+/frontend/ @WareTwin/frontend
+/contracts/ @WareTwin/maintainers @WareTwin/backend @WareTwin/frontend
+/docs/ @WareTwin/maintainers
+/.github/ @WareTwin/maintainers
