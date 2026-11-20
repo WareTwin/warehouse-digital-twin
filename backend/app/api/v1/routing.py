@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
+
 from app.engines.contracts import Point
 from app.engines.routing.bfs import find_path
 

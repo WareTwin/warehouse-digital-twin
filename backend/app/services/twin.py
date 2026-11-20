@@ -1,4 +1,5 @@
-from datetime import datetime, timezone
+from datetime import UTC, datetime
+
 
 def snapshot() -> dict:
-    return {"timestamp": datetime.now(timezone.utc).isoformat(), "warehouse": None, "agvs": [], "tasks": []}
+    return {"timestamp": datetime.now(UTC).isoformat(), "warehouse": None, "agvs": [], "tasks": []}

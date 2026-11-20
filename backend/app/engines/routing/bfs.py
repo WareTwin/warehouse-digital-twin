@@ -1,5 +1,7 @@
 from collections import deque
+
 from app.engines.contracts import Point, RouteResult
+
 
 def find_path(blocked: set[Point], start: Point, goal: Point) -> RouteResult:
     if start in blocked or goal in blocked:
