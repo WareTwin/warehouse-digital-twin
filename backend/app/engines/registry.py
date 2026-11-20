@@ -1,4 +1,5 @@
 from collections.abc import Callable
+
 from app.engines.contracts import Point, RouteResult
 
 RouteEngine = Callable[[set[Point], Point, Point], RouteResult]

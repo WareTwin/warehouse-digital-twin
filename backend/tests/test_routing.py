@@ -1,6 +1,7 @@
 from app.engines.contracts import Point
 from app.engines.routing.bfs import find_path
 
+
 def test_bfs_finds_shortest_manhattan_route():
     result = find_path(set(), Point(0, 0), Point(2, 1))
     assert result.cost == 3

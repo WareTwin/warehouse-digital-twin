@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+
 from app.core.security import generate_demo_token
 
 router = APIRouter(prefix="/auth", tags=["auth"])

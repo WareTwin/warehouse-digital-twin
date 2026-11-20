@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+
 from app.schemas.warehouse import WarehouseCreate
 
 router = APIRouter(prefix="/warehouses", tags=["warehouses"])

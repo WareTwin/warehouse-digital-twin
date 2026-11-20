@@ -1,5 +1,7 @@
 from typing import Annotated
+
 from fastapi import Header, HTTPException, status
+
 
 def require_demo_auth(authorization: Annotated[str | None, Header()] = None) -> str:
     """Placeholder auth dependency. Replace with verified JWT/OIDC validation before deployment."""

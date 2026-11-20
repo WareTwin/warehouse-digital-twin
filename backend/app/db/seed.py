@@ -1,5 +1,7 @@
 from sqlalchemy.orm import Session
-from app.db.models import Warehouse, AGV
+
+from app.db.models import AGV, Warehouse
+
 
 def seed_demo_data(db: Session) -> None:
     if not db.query(Warehouse).first():

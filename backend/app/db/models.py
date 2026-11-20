@@ -1,7 +1,10 @@
 from datetime import datetime
-from sqlalchemy import DateTime, Integer, String, JSON, func
+
+from sqlalchemy import JSON, DateTime, Integer, String, func
 from sqlalchemy.orm import Mapped, mapped_column
+
 from app.db.base import Base
+
 
 class Warehouse(Base):
     __tablename__ = "warehouses"

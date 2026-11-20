@@ -1,4 +1,5 @@
 from fastapi import APIRouter
+
 from app.services.twin import snapshot
 
 router = APIRouter(prefix="/twin", tags=["digital twin"])
